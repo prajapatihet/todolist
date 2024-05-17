@@ -28,11 +28,51 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+form input{
+  height: 40px;
+  flex-basis: 80%;
+}
+
+form button{
+  flex-basis: 20%;
+}
+
+.outerDiv{
+  width: 1170px;
+  margin: auto;
+}
+
+.outerDiv ul{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50px;
+  list-style: none;
+}
+.outerDiv ul li {
+  color: white;
+  padding: 11px;
+  background-color: black;
+  position: relative;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.outerDiv ul li span{
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.completetodo{
+  text-decoration: line-through;
+  color: red !important;
+  background-color: yellow !important;
 }
