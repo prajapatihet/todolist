@@ -1,6 +1,6 @@
 
-// import './App.css';
-import Tabs from './componects/Tabs';
+import './App.css';
+// import Tabs from './componects/Tabs';
 // import ToDoList from './componects/ToDoList';
 
 function App() {
