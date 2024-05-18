@@ -6,7 +6,7 @@ import { blogs } from '../Data/blogs';
 export default function BlogDetails() {
     let uselocation = useLocation();
     let currentId = uselocation.pathname.split('/')[2];
-    let currentData = blogs.filter((v) => v.id == currentId)[0];
+    let currentData = blogs.filter((v) => v.id === parseInt(currentId))[0];
     return (
         <div>
             <Header />
