@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './pages/About';
 import Courses from './pages/Courses';
+import Blog from './pages/Blog';
+import BlogDetails from './pages/BlogDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter(
@@ -16,12 +18,20 @@ let allRoutes = createBrowserRouter(
       element: <Home />
     },
     {
-      path: '/about-us',
+      path: 'about-us',
       element: <About />
     },
     {
-      path: '/courses',
+      path: 'courses',
       element: <Courses />
+    },
+    {
+      path: 'blog',
+      element: <Blog />
+    },
+    {
+      path: 'blog/:id',
+      element: <BlogDetails />
     }
   ]
 )
